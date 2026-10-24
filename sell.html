@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sell an Item | CampusKart</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">🎓 CampusKart</a>
+      <a href="index.html" class="btn btn-outline">← Back to Browse</a>
+    </div>
+  </header>
+
+  <main class="container form-page">
+    <h1>Post a new item</h1>
+    <p class="muted">Fill in the details below. Your item will appear on the browse page.</p>
+
+    <form id="sellForm" class="card form-card">
+      <label>
+        Item title *
+        <input type="text" id="title" required placeholder="e.g. Engineering Mathematics Textbook" />
+      </label>
+
+      <label>
+        Description
+        <textarea id="description" rows="3" placeholder="Condition, edition, any notes…"></textarea>
+      </label>
+
+      <label>
+        Price (₹) *
+        <input type="number" id="price" required min="0" step="1" placeholder="250" />
+      </label>
+
+      <label>
+        Category *
+        <select id="category" required>
+          <option value="">-- Select --</option>
+          <option value="Books">Books</option>
+          <option value="Electronics">Electronics</option>
+          <option value="Cycles">Cycles</option>
+          <option value="Hostel">Hostel Essentials</option>
+          <option value="Others">Others</option>
+        </select>
+      </label>
+
+      <label>
+        Image URL (optional)
+        <input type="url" id="imageUrl" placeholder="https://…" />
+      </label>
+
+      <label>
+        Your name *
+        <input type="text" id="seller" required placeholder="e.g. Rahul" />
+      </label>
+
+      <label>
+        Contact (phone/email) *
+        <input type="text" id="contact" required placeholder="e.g. 9876543210" />
+      </label>
+
+      <button type="submit" class="btn btn-primary btn-block">Post Item</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> CampusKart</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/sell.js"></script>
+</body>
+</html>

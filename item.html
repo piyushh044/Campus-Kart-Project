@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Item Details | CampusKart</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">🎓 CampusKart</a>
+      <a href="index.html" class="btn btn-outline">← Back to Browse</a>
+    </div>
+  </header>
+
+  <main class="container form-page">
+    <div id="itemDetail" class="card item-detail"></div>
+    <div id="notFound" class="empty" hidden>
+      <div class="empty-emoji">😕</div>
+      <h3>Item not found</h3>
+      <p>It may have been removed.</p>
+      <a href="index.html" class="btn btn-primary">Back to Browse</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> CampusKart</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/item.js"></script>
+</body>
+</html>
